@@ -8,6 +8,7 @@
   + 计分：玩家每次甩掉一个巡逻兵计一分，与巡逻兵碰撞游戏结束；
 
 + UML类图
+![UML](https://github.com/SO4P/Unity6/blob/master/UML.png)
 
 + 动画部分
   + 没有使用动画状态机，因为将动画加到状态机后动画就不动了，该状态的Motion为空，所以简单使用了Animation中的Start和Stop方法开始/结束动画
@@ -426,6 +427,7 @@
 
         public void reSet()
         {
+            location = 5;
             GameObject.Destroy(player);
             player = GameObject.Instantiate(Resources.Load("Perfabs/Player", typeof(GameObject)), startLocation, Quaternion.identity, null) as GameObject;
         }

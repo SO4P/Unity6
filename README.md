@@ -90,7 +90,7 @@
             if (state)
             {
                 timer += Time.fixedDeltaTime;
-                GUI.TextField(new Rect(Screen.width / 2, 30, 100, 60), "Time:" + timer.ToString("G4"));
+                GUI.TextField(new Rect(Screen.width - 100, 60, 100, 60), "Time:" + timer.ToString("G4"));
             }
             if (!state)
             {
